@@ -1,0 +1,6 @@
+#!/bin/bash
+# Ejercicio 22
+# Enunciado: Muestra el nombre de usuario y su shell separados por una tabulación, utilizando awk -F:.
+#
+# Separa usuario y shell con una tabulación.
+awk -F: '{print $1 "\t" $7}' /etc/passwd
